@@ -1,0 +1,17 @@
+var n = 10;
+var height = 5;
+var width = 8;
+
+function wallPaint(n, height, width) {  
+    
+    var areaOfWall = height * width;      
+    
+    if (areaOfWall % n == 0)          
+        return areaOfWall / n;
+    
+    return (areaOfWall/n)+1;
+}
+
+var totalWallPaint = wallPaint(n, height, width);  
+
+console.log(totalWallPaint);
